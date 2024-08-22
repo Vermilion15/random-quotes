@@ -1,0 +1,115 @@
+body {
+  background-color: blanchedalmond;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  margin: 10rem auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #AAAAAA;
+  max-width: 800px;
+  width: 100%;
+  height: 600px;
+  border-radius: 24px;
+}
+
+.container h1 {
+  font-size: 2rem;
+}
+
+.twt-btn {
+  padding: 10px 1rem;
+  background-color: #e2ac7f;
+  border-radius: 1rem;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.quote-container {
+  width: 500px;
+  margin: 1rem auto;
+}
+
+.quote-container h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* From Uiverse.io by AlimurtuzaCodes */ 
+.btn {
+  border: none;
+  width: 15em;
+  height: 3em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg,#fdfcfb ,  #e2d1c3);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px  #e2ac7f;
+  transform: translateY(-0.5px);
+}
+
+.btn:hover .text {
+  color: #6d6464;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1);
+} 
+
+.loader {
+  width: 45px;
+  height: 40px;
+  background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
+            linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
+            linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
+  background-size: 10px 400%;
+  background-repeat: no-repeat;
+  animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+  0% {
+    background-position: 0% 100%, 50% 100%, 100% 100%
+  }
+
+  100% {
+    background-position: 0% 0%, 50% 0%, 100% 0%
+  }
+}
+    
+
