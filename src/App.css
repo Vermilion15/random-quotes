@@ -112,4 +112,16 @@ a{
   }
 }
     
+@media only screen and (min-width: 350px) and (max-width:765px) {
+  .container {
+    width: 350px;
+    height: 500px;
+  }
+
+  .quote-container {
+    width: 250px;
+  }
+}
+
+
 
