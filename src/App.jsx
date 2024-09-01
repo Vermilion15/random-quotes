@@ -3,13 +3,16 @@ import "./App.css";
 
 function App() {
   const [quote, setQuote] = useState("");
+  const [ loader , setLoader ] = useState(false)
 
   // fetch quote api
   const getQuote = () => {
+    setLoader(true);
     fetch("https://api.quotable.io/random")
       .then((response) => response.json())
       .then((quote) => {
         setQuote(quote);
+        setLoader(false);
       });
   };
 
@@ -34,13 +37,16 @@ function App() {
         </svg>
         <span className="text">Generate Quote </span>
       </button>
-      <div className="quote-container">
+      { loader ? (
+        <div className="loader"></div>
+      ) : (
+        <div className="quote-container">
         <h3> {quote.content} </h3>
         <p> {quote.author} </p>
       </div>
+      )}
       <button className="twt-btn "><a  href={`https://twitter.com/intent/tweet?text=${ quote.content } - ${ quote.author }`} >Tweet This Quote</a></button>
     </div>
   );
 }
-// 'https://twitter.com/intent/tweet?text=' + quote.content + ' - ' + quote.author
 export default App;
