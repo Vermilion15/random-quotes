@@ -1,9 +1,9 @@
 
-const Header = ({ onRunQuote }) => {
+const Header = ({ showQuote  }) => {
   return (
     <>
       <h1>Random Quote Generator</h1>
-      <button className="btn" onClick={ onRunQuote }>
+      <button className="btn" onClick={ showQuote }>
         <svg
           height="24"
           width="24"

@@ -2,36 +2,33 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import BodyQuote from "./Components/BodyQuote";
+import quotes from "./Quotes/quotes.json";
 
 // api source
-const apiUrl = "http://api.quotable.io/random";
 
 function App() {
-  const [quote, setQuote] = useState("");
+  const [quote, setQuote] = useState(quotes);
   const [loader, setLoader] = useState(false);
 
-  // fetch quote api
-  const getQuote = async() => {
-    try {
-      setLoader(true);
-      const getDataQuote = await fetch(apiUrl);
-      const quoteData = await getDataQuote.json();
-      setQuote(quoteData);
+  // show random quote
+  const showQuote = () => {
+    setLoader(true);
+    setTimeout(() => {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      setQuote(quotes[randomIndex]);
       setLoader(false);
-    }catch(e) {
-      console.error(e);
-      setLoader(false);
-      alert("An error occurred while fetching the quote. Please try again later.");
-    }
+    }, 1000);
   };
 
-  const runQuote = () => {
-    getQuote();
-  };
+  // call the showQuote function when the component mounts
+ 
+
+
+  // fetch quote apiq
 
   return (
     <div className="container">
-      <Header onRunQuote={ runQuote }/>
+      <Header showQuote={ showQuote }/>
       <BodyQuote quote={ quote } loader={ loader }/>
     </div>
   );
