@@ -38,5 +38,41 @@
     {
         "author" : "Friedrich Nietzsche",
         "content" : "I have not failed. I've just found 10,000 ways that won't work."
+    },
+    {
+        "author" : "Friedrich Nietzsche",
+        "content" : "There are no facts , only interpretations"
+    },
+    {
+        "author"  :"Simone de Beauvoir",
+        "content" : "I am incapable to conceiving infinity, and yet i do not acept finity.I want this adventure that is the context of my life to go on without end."
+    },
+    {
+        "author" :"Friedrich Nietzsche",
+        "content" : "No artist toerates reality"
+    },
+    {
+        "author" : "Socrates",
+        "content" : "The only true wisdom is in knowing you know nothing."
+    },
+    {
+        "author" : "Jean-Paul Satre",
+        "content" : "Do you think that I count the days? There is only one day left, always starting over: it is given to us at dawn and taken away from us at dusk."
+    },
+    {
+        "author" : "Franz Kafka",
+        "content" : "The world is a stage, and all the players must perform at the right time."
+    },
+    {
+        "author" : "Franz Kafka",
+        "content" : "One idiot is one idiot. Two idiots are two idiots. Ten thousand idiots are a political party."
+    },
+    {
+        "author" : "Aristotle",
+        "content" : "Man is a political being"
+    },
+    {
+        "author" : "Aristotle",
+        "content" : "We are what we do repeatedly. Excellence, then, is a habit, not an action."
     }
 ]

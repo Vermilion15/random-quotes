@@ -4,7 +4,6 @@ import Header from "./Components/Header";
 import BodyQuote from "./Components/BodyQuote";
 import quotes from "./Quotes/quotes.json";
 
-// api source
 
 function App() {
   const [quote, setQuote] = useState(quotes);
@@ -17,14 +16,8 @@ function App() {
       const randomIndex = Math.floor(Math.random() * quotes.length);
       setQuote(quotes[randomIndex]);
       setLoader(false);
-    }, 1000);
+    }, 2000);
   };
-
-  // call the showQuote function when the component mounts
- 
-
-
-  // fetch quote apiq
 
   return (
     <div className="container">
